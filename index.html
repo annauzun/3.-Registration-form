@@ -12,35 +12,115 @@
     </head>
 
     <body>
-        <!--div class="registration">
-            <div class="row">
-                <div class="registration-image"></div>
-
-                <div class="registration-form">
-
-                </div>
-            </div>
-
-            
-        </div>-->
-
         <div class="registration">
             <div class="row">
                 <div id="registration-image"></div>
                 <div class="registration-form">
                     <form action="/url">
+         
                     <div class="data-section">
                         <h2>Регистрация</h2>
                         <div class="data-input">
-                            <div class="field">
+                            <div class="data-field">
                                 <div class="label">
                                     <label for="firstName">Имя</label>
                                 </div>
                                 <input type="text" id="firstName" name="firstName" /> 
                             </div>
 
+                            <div class="data-field">
+                                <div class="label">
+                                    <label for="lastName">Фамилия</label>
+                                </div>
+                                <input type="text" id="lastName" name="lastName" /> 
+                            </div>
+
+                            <div class="data-field">
+                                <div class="label">
+                                    <label for="email">Email</label>
+                                </div>
+                                <input type="text" id="email" name="email" /> 
+                            </div>
+
+                            <div class="data-field">
+                                <div class="label">
+                                    <label for="phone">Телефон</label>
+                                </div>
+                                <input type="text" id="phone" name="phone" /> 
+                            </div>
                         </div>
                     </div>
+
+                    <div class="address-section">
+                        <h3>Адрес доставки</h3>
+                        <div class="address-input">
+                            <div class="address-field">
+                                <div class="label">
+                                    <label for="country">Страна</label>
+                                </div>
+                                <select id="country">
+                                    <option value="Russia">Россия</option>
+                                    <option value="Belarus">Беларусь</option>
+                                    <option value="Kazakhstan">Казахстан</option>
+                                    <option value="Poland">Польша</option>
+                                    <option value="Moldova">Молдова</option>
+                                </select>
+                            </div>
+
+                            <div class="address-field">
+                                <div class="label">
+                                    <label for="city">Город</label>
+                                </div>
+                                <input type="text" id="city" name="city" /> 
+                            </div>
+
+                            <div class="address-field">
+                                <div class="label">
+                                    <label for="zip-code">Почтовый индекс</label>
+                                </div>
+                                <input type="text" id="zip-code" name="zip-code" /> 
+                            </div>
+
+                            <div class="address-field">
+                                <div class="label">
+                                    <label for="delivery-address">Адрес доставки (улица, дом, квартира)</label>
+                                </div>
+                                <input type="text" id="delivery-address" name="delivery-address" /> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notification-section">
+                        <h3>Уведомлять об акциях и скидках</h3>
+                        <p class="notification-text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                        <div class="notification-input">
+                            <div class="checkbox">
+                                <input type="checkbox" id="contact1" name="contacts" />
+                                <div class="label">
+                                    <label for="contact1">По Email</label>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="contact2" name="contacts" />
+                                <div class="label">
+                                    <label for="contact2">По SMS</label>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="contact3" name="contacts" />
+                                <div class="label">
+                                    <label for="contact3">Push-уведомления в приложении</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        <input class="button" type="submit" value="Создать аккаунт"/>
+                    
+                   
+
+
                     </form>
                 </div>
 
@@ -50,7 +130,7 @@
             </div>
 
             
-        </div>-->
+        </div>
 
     </body>
 </html>

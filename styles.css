@@ -42,9 +42,13 @@ body {
 }
 
 .registration-form {
+    display: flex;
+    flex-direction: column;
+    
     margin: 40px;
     width: 500px;
     background-color: bisque;
+
 }
 
 h2 {
@@ -53,14 +57,67 @@ h2 {
     color: #0284c7;
 }
 
+/*.data-section*/
+
 .data-input {
     background-color: aquamarine;
     display: flex;
-    
-
+    flex-wrap: wrap;
 }
 
-.field {
+.data-field {
     margin: calc(var(--offset)/2);
     border: #171717;
 }
+
+/*.address-section {*/
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #404040;
+}
+
+.address-input {
+    background-color: rgb(127, 189, 255);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address-field {
+    margin: calc(var(--offset)/3);
+    border: #171717;
+}
+
+/*.notification-section {*/
+
+.notification-text {
+    font-size: 14px;
+    color: #737373;
+}
+
+.notification-input {
+    background-color: rgb(242, 166, 218);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+    
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+
+}
+
+.button:hover {
+    background-color: #0284c7;
