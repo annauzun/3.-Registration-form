@@ -5,6 +5,8 @@
 html {
     --offset: 15px;
     --primary-color: #444347;
+    --border-color: #d4d4d4;
+    --background-color: #90777b; 
 }
 
 body {
@@ -27,7 +29,7 @@ body {
     margin-right: auto;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px #d4d4d4;
+    box-shadow: 10px 10px 15px var(--border-color);
 }
 
 #registration-image {
@@ -51,11 +53,11 @@ body {
 h1 {
     font-weight: 800;
     font-size: 24px;
-    color: #90777b;
+    color: var(--background-color);
 }
 
 .data-section {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .data-input {
@@ -84,17 +86,17 @@ h1 {
     width: 100%;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--border-color);
     margin-top: 5px;
     padding: 5px 10px;
 }
  
 .text-input:focus {
-    box-shadow: 0 0 0 2px #90777b ;  
+    box-shadow: 0 0 0 2px var(--background-color) ;  
 }
 
 .address-section {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border-color);
     padding: 30px 0px;
 }
 
@@ -118,13 +120,13 @@ h2 {
 }
 
 .notification-section {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border-color);
     padding: 30px 0px;
 }
 
 .notification-text {
     font-size: 16px;
-    color: #737373;
+    color: var(--background-color);
     line-height: 20px;
     margin: 20px 0px;
 }
@@ -165,7 +167,7 @@ footer {
 }
 
 .button {
-    background-color: #90777b;
+    background-color: var(--background-color);
     color: whitesmoke;
     font-size: 16px;
     font-weight: 600;

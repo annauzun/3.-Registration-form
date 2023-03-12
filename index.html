@@ -16,123 +16,111 @@
             <div class="row">
                 <div id="registration-image"></div>
                 <div class="registration-form">
-                    <form action="/url">
-         
-                    <div class="data-section">
-                        <h1>Регистрация</h1>
-                        <div class="data-input">
-                            <div class="data-field">
-                                <div class="label">
-                                    <label for="firstName">Имя</label>
+                    <form action="https://www.bit-by-bit.ru/form-submit">
+                        <div class="data-section">
+                            <h1>Регистрация</h1>
+                            <div class="data-input">
+                                <div class="data-field">
+                                    <div class="label">
+                                        <label for="firstName">Имя</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="firstName" name="firstName" /> 
                                 </div>
-                                <input class="text-input" type="text" id="firstName" name="firstName" /> 
-                            </div>
 
-                            <div class="data-field">
-                                <div class="label">
-                                    <label for="lastName">Фамилия</label>
+                                <div class="data-field">
+                                    <div class="label">
+                                        <label for="lastName">Фамилия</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="lastName" name="lastName" /> 
                                 </div>
-                                <input class="text-input" type="text" id="lastName" name="lastName" /> 
-                            </div>
 
-                            <div class="data-field">
-                                <div class="label">
-                                    <label for="email">Email</label>
+                                <div class="data-field">
+                                    <div class="label">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="email" name="email" /> 
                                 </div>
-                                <input class="text-input" type="text" id="email" name="email" /> 
-                            </div>
 
-                            <div class="data-field">
-                                <div class="label">
-                                    <label for="phone">Телефон</label>
+                                <div class="data-field">
+                                    <div class="label">
+                                        <label for="phone">Телефон</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="phone" name="phone" /> 
                                 </div>
-                                <input class="text-input" type="text" id="phone" name="phone" /> 
                             </div>
                         </div>
-                    </div>
 
-                    <div class="address-section">
-                        <h2>Адрес доставки</h2>
-                        <div class="address-input">
-                            <div class="address-field">
-                                <div class="label">
-                                    <label for="country">Страна</label>
-                                </div>
+                        <div class="address-section">
+                            <h2>Адрес доставки</h2>
+                            <div class="address-input">
+                                <div class="address-field">
+                                    <div class="label">
+                                        <label for="country">Страна</label>
+                                    </div>
                                 
-                                <select class="text-input country">
-                                    <option value="Russia">Россия</option>
-                                    <option value="Belarus">Беларусь</option>
-                                    <option value="Kazakhstan">Казахстан</option>
-                                    <option value="Poland">Польша</option>
-                                    <option value="Moldova">Молдова</option>
-                                </select>
-                               
-                            </div>
-
-                            <div class="address-field">
-                                <div class="label">
-                                    <label for="city">Город</label>
+                                    <select class="text-input country" type="text" id="country" name="country">
+                                        <option value="Russia">Россия</option>
+                                        <option value="Belarus">Беларусь</option>
+                                        <option value="Kazakhstan">Казахстан</option>
+                                        <option value="Poland">Польша</option>
+                                        <option value="Moldova">Молдова</option>
+                                    </select>
                                 </div>
-                                <input class="text-input" type="text" id="city" name="city" /> 
-                            </div>
 
-                            <div class="address-field">
-                                <div class="label">
-                                    <label for="zip-code">Почтовый индекс</label>
+                                <div class="address-field">
+                                    <div class="label">
+                                        <label for="city">Город</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="city" name="city" /> 
                                 </div>
-                                <input class="text-input" type="text" id="zip-code" name="zip-code" /> 
-                            </div>
+
+                                <div class="address-field">
+                                    <div class="label">
+                                        <label for="zip-code">Почтовый индекс</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="zip-code" name="zip-code" /> 
+                                </div>
                         
-                            <div class="address-field">
-                                <div class="label">
-                                    <label for="delivery-address">Адрес доставки (улица, дом, квартира)</label>
-                                </div>
-                                <input class="text-input" type="text" id="delivery-address" name="delivery-address" /> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="notification-section">
-                        <h2>Уведомлять об акциях и скидках</h2>
-                        <p class="notification-text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
-                        <div class="notification-input">
-                            <div class="checkbox">
-                                <input type="checkbox" class="checkmark" id="contact1" name="contacts" />
-                                <div class="label">
-                                    <label for="contact1">По Email</label>
-                                </div>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" class="checkmark" id="contact2" name="contacts" />
-                                <div class="label">
-                                    <label for="contact2">По SMS</label>
-                                </div>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" class="checkmark" id="contact3" name="contacts" />
-                                <div class="label">
-                                    <label for="contact3">Push-уведомления в приложении</label>
+                                <div class="address-field">
+                                    <div class="label">
+                                        <label for="delivery-address">Адрес доставки (улица, дом, квартира)</label>
+                                    </div>
+                                    <input class="text-input" type="text" id="delivery-address" name="delivery-address" /> 
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <footer>
-                        <input class="button" type="submit" value="Создать аккаунт"/>
-                    </footer>
-                   
+                        <div class="notification-section">
+                            <h2>Уведомлять об акциях и скидках</h2>
+                            <p class="notification-text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                            <div class="notification-input">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkmark" id="contact1" name="emailNotification" />
+                                    <div class="label">
+                                        <label for="contact1">По Email</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkmark" id="contact2" name="smsNotification" />
+                                    <div class="label">
+                                        <label for="contact2">По SMS</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkmark" id="contact3" name="pushNotifications" />
+                                    <div class="label">
+                                        <label for="contact3">Push-уведомления в приложении</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-
+                        <footer>
+                            <input class="button" type="submit" value="Создать аккаунт"/>
+                        </footer>
                     </form>
-                </div>
-
-                
-
-                
-            </div>
-
-            
+                </div>  
+            </div>    
         </div>
-
     </body>
 </html>
