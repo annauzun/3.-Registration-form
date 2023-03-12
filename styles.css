@@ -3,15 +3,16 @@
 }
 
 html {
-    --offset: 40px;
+    --offset: 15px;
+    --primary-color: #444347;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    color: #171717;
 }
+
 .registration {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     padding: 80px 0px 80px 0px;
@@ -20,20 +21,18 @@ body {
 
 .row {
     display: flex;
-    
-    max-width: 1024px;
-    width: 100%;
-    height: 1000px;
+    width: 1024px;
+    height: 900px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     border-radius: 15px;
     box-shadow: 10px 10px 15px #d4d4d4;
-    }
+}
 
 #registration-image {
     background-image: url(mountains-2.jpg);
-    width: 444px;
+    width: 450px;
     max-height: 100%;
     background-size: cover;
     background-position: center top;
@@ -44,80 +43,139 @@ body {
 .registration-form {
     display: flex;
     flex-direction: column;
-    
+    flex-grow: 1;
     margin: 40px;
-    width: 500px;
-    background-color: bisque;
-
+    width: calc(1024px - 450px - 80px);  
 }
 
-h2 {
+h1 {
     font-weight: 800;
     font-size: 24px;
-    color: #0284c7;
+    color: #90777b;
 }
 
-/*.data-section*/
+.data-section {
+    border-bottom: 1px solid #e5e5e5;
+}
 
 .data-input {
-    background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    gap: var(--offset);
+    margin: 30px 0px;
 }
 
 .data-field {
-    margin: calc(var(--offset)/2);
-    border: #171717;
+    width: calc((100% - var(--offset))/2);
+    margin-bottom: 10px; 
 }
 
-/*.address-section {*/
+.label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color); 
+}
 
-h3 {
-    font-weight: 600;
-    font-size: 20px;
-    color: #404040;
+.text-input {
+    color: var(--primary-color);
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+ 
+.text-input:focus {
+    box-shadow: 0 0 0 2px #90777b ;  
+}
+
+.address-section {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 30px 0px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
 }
 
 .address-input {
-    background-color: rgb(127, 189, 255);
     display: flex;
     flex-wrap: wrap;
+    gap: var(--offset);
+    margin-top: 30px;
 }
 
 .address-field {
-    margin: calc(var(--offset)/3);
-    border: #171717;
+    width: calc((100% - var(--offset)*2)/3);
+    flex-grow: 1;
+    margin-bottom: 10px;
 }
 
-/*.notification-section {*/
+.notification-section {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 30px 0px;
+}
 
 .notification-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #737373;
+    line-height: 20px;
+    margin: 20px 0px;
 }
 
 .notification-input {
-    background-color: rgb(242, 166, 218);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
     
 .checkbox {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}    
+ 
+.checkmark {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.checkmark:checked {
+    background-color: var(--primary-color);
+    background-image: url(checkmark_icon.png);
+    background-position: center;
+    background-size: contain;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    background-color: #0ea5e9;
-    color: white;
+    background-color: #90777b;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 5px;
+    border: none;
     padding: 10px 20px 10px 20px;
     width: 100%;
-
 }
 
 .button:hover {
-    background-color: #0284c7;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
